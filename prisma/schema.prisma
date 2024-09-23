@@ -14,40 +14,48 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  email     String   @unique
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  email     String    @unique
   password  String
   phone     String?
   name      String
   age       Int
-  status    Int      @default(1)
-  posts     Post[]
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  status    Int       @default(1)
+  posts     Posts[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
 }
 
-model Post {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+model Posts {
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   title      String
   summary    String
   content    String
-  status     Int      @default(1)
-  author     User     @relation(fields: [authorId], references: [id])
-  authorId   String   @db.ObjectId
-  categories Category @relation(fields: [categoryId], references: [id])
-  categoryId String   @db.ObjectId
+  status     Int       @default(1)
+  author     User      @relation(fields: [authorId], references: [id])
+  authorId   String    @db.ObjectId
+  category   Category  @relation(fields: [categoryId], references: [id])
+  categoryId String    @db.ObjectId
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  deletedAt  DateTime?
 }
 
 model Category {
-  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
   name        String
   description String
-  posts       Post[]
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  posts       Posts[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
 }
 
 model Comment {
-  id      String @id @default(cuid()) @map("_id") @db.ObjectId
-  message String
+  id        String    @id @default(cuid()) @map("_id") @db.ObjectId
+  message   String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
 }

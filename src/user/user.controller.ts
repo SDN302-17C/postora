@@ -22,7 +22,6 @@ export class UserController {
     return this.userService.createUser(body);
   }
 
-
   @Put(':id')
   update(@Param('id') id: string, @Body() body: updateUserDto): Promise<User> {
     return this.userService.updateUser(id, body);
