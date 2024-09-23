@@ -106,7 +106,7 @@ export class CategoryService {
   }
 
   async updateCategory(id: string, data: updateCategoryDto): Promise<Category> {
-    const category = this.prismaService.category.update({
+    const updateCategory = this.prismaService.category.update({
       where: {
         id,
         AND: [
@@ -117,14 +117,14 @@ export class CategoryService {
       },
       data,
     });
-    if (!category) {
+    if (!updateCategory) {
       throw new HttpException('Category not found', 404);
     }
-    throw new HttpException({ message: 'Update Category Successful!', category }, 200);
+    throw new HttpException({ message: 'Update Category Successful!', updateCategory }, 200);
   }
 
   async deleteCategory(id: string): Promise<Category> {
-    const category = this.prismaService.category.update({
+    const deleteCategory = this.prismaService.category.update({
       where: {
         id,
       },
@@ -132,9 +132,9 @@ export class CategoryService {
         deletedAt: new Date(),
       },
     });
-    if (!category) {
+    if (!deleteCategory) {
       throw new HttpException('Category not found', 404);
     }
-    throw new HttpException({ message: 'Delete Category Successful!', category }, 200);
+    throw new HttpException({ message: 'Delete Category Successful!', deleteCategory }, 200);
   }
 }

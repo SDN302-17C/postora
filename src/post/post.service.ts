@@ -123,7 +123,7 @@ export class PostService {
   }
 
   async updatePost(id: string, data: updatePostDto): Promise<Posts> {
-    const post = this.prismaService.posts.update({
+    const updatePost = this.prismaService.posts.update({
       where: {
         id,
         AND: [
@@ -134,14 +134,17 @@ export class PostService {
       },
       data,
     });
+    if (!updatePost) {
+      throw new HttpException('Post not found', 404);
+    }
     throw new HttpException(
-      { message: 'Update Post Successful!', post },
+      { message: 'Update Post Successful!', updatePost },
       200,
     );
   }
 
   async deletePost(id: string): Promise<Posts> {
-    const post = this.prismaService.posts.update({
+    const deletePost = this.prismaService.posts.update({
       where: {
         id,
       },
@@ -149,8 +152,11 @@ export class PostService {
         deletedAt: new Date(),
       },
     });
+    if (!deletePost) {
+      throw new HttpException('Post not found', 404);
+    }
     throw new HttpException(
-      { message: 'Delete Post Successful!', post },
+      { message: 'Delete Post Successful!', deletePost },
       200,
     );
   }

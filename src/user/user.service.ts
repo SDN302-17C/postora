@@ -119,7 +119,10 @@ export class UserService {
         deletedAt: null,
       },
     });
-    return newUser;
+    throw new HttpException(
+      { message: 'Create User Successful!', newUser },
+      201,
+    );
   }
 
   async updateUser(id: string, body: updateUserDto): Promise<User> {
@@ -147,11 +150,14 @@ export class UserService {
       },
     });
 
-    return updatedUser;
+    throw new HttpException(
+      { message: 'Create User Successful!', updatedUser },
+      200,
+    );
   }
 
   async deleteUser(id: string): Promise<User> {
-    return this.prismaService.user.update({
+    const deleteUser = this.prismaService.user.update({
       where: {
         id,
       },
@@ -159,5 +165,12 @@ export class UserService {
         deletedAt: new Date(),
       },
     });
+    if (!deleteUser) {
+      throw new HttpException('User not found', 404);
+    }
+    throw new HttpException(
+      { message: 'Delete User Successful!', deleteUser },
+      404,
+    );
   }
 }
