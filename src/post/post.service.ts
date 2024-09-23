@@ -107,19 +107,23 @@ export class PostService {
       },
     });
     if (!post) {
-      throw new HttpException('User not found', 404);
+      throw new HttpException('Post not found', 404);
     }
     return post;
   }
 
   async createPost(data: createPostDto): Promise<Posts> {
-    return this.prismaService.posts.create({
+    const newPost = this.prismaService.posts.create({
       data: { ...data, deletedAt: null },
     });
+    throw new HttpException(
+      { message: 'Create Post Successful!',newPost },
+      201,
+    );
   }
 
   async updatePost(id: string, data: updatePostDto): Promise<Posts> {
-    return this.prismaService.posts.update({
+    const post = this.prismaService.posts.update({
       where: {
         id,
         AND: [
@@ -130,10 +134,14 @@ export class PostService {
       },
       data,
     });
+    throw new HttpException(
+      { message: 'Update Post Successful!', post },
+      200,
+    );
   }
 
   async deletePost(id: string): Promise<Posts> {
-    return this.prismaService.posts.update({
+    const post = this.prismaService.posts.update({
       where: {
         id,
       },
@@ -141,5 +149,9 @@ export class PostService {
         deletedAt: new Date(),
       },
     });
+    throw new HttpException(
+      { message: 'Delete Post Successful!', post },
+      200,
+    );
   }
 }

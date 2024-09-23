@@ -100,7 +100,7 @@ export class CategoryService {
     });
 
     throw new HttpException(
-      { message: 'Create Successful!', newCategory },
+      { message: 'Create Category Successful!', newCategory },
       201,
     );
   }
@@ -120,7 +120,7 @@ export class CategoryService {
     if (!category) {
       throw new HttpException('Category not found', 404);
     }
-    throw new HttpException({ message: 'Update Successful!', category }, 200);
+    throw new HttpException({ message: 'Update Category Successful!', category }, 200);
   }
 
   async deleteCategory(id: string): Promise<Category> {
@@ -135,6 +135,6 @@ export class CategoryService {
     if (!category) {
       throw new HttpException('Category not found', 404);
     }
-    throw new HttpException({ message: 'Delete Successful!', category }, 200);
+    throw new HttpException({ message: 'Delete Category Successful!', category }, 200);
   }
 }
