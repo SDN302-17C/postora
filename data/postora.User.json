@@ -1,170 +1,190 @@
 [{
   "_id": {
-    "$oid": "66f1266bf37a326503bf6553"
+    "$oid": "66f174619fa39557cb850764"
   },
   "email": "user1@example.com",
-  "password": "password1",
+  "password": "$2b$10$g8na.gEv2Y1xabDizdpr2OsAzRnp5p8I7ukNl9jalw8CLEwb2N7fq",
   "phone": "0123456789",
   "name": "John Doe",
-  "age": 28,
-  "status": 1,
+  "age": {
+    "$numberLong": "28"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:00:01.119Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:00:01.119Z"
+  },
+  "deletedAt": null
 },
 {
   "_id": {
-    "$oid": "66f1266bf37a326503bf6554"
+    "$oid": "66f174ad9fa39557cb850765"
   },
   "email": "user2@example.com",
-  "password": "password2",
+  "password": "$2b$10$wBvjxwikCnOIszGxRIBhhO7TZ5rK90vF7IbZTWVcm7egSAfDcvZva",
   "phone": "0987654321",
   "name": "Jane Smith",
-  "age": 32,
-  "status": 1,
+  "age": {
+    "$numberLong": "32"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:01:17.838Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:01:17.838Z"
+  },
+  "deletedAt": null
 },
 {
   "_id": {
-    "$oid": "66f1266bf37a326503bf6555"
+    "$oid": "66f174b89fa39557cb850766"
   },
   "email": "user3@example.com",
-  "password": "password3",
+  "password": "$2b$10$H3wl4YsAzbGi6wBSApYxyO7zyFuHXqyIX4dp6RotifnDEZBgCv.HG",
   "phone": "0981122334",
   "name": "Alex Johnson",
-  "age": 24,
-  "status": 1,
+  "age": {
+    "$numberLong": "24"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:01:28.534Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:01:28.534Z"
+  },
+  "deletedAt": null
 },
 {
   "_id": {
-    "$oid": "66f1266bf37a326503bf6556"
+    "$oid": "66f174c39fa39557cb850767"
   },
   "email": "user4@example.com",
-  "password": "password4",
+  "password": "$2b$10$wSTQ9z468XPFBC2WK5kbA.1DYjGKNtf9aNP0UiwP.SzDj7TZh8joW",
   "phone": "0911223344",
   "name": "Emily Davis",
-  "age": 30,
-  "status": 1,
+  "age": {
+    "$numberLong": "30"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:01:39.650Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:01:39.650Z"
+  },
+  "deletedAt": null
 },
 {
   "_id": {
-    "$oid": "66f1266bf37a326503bf6557"
+    "$oid": "66f174d29fa39557cb850768"
   },
   "email": "user5@example.com",
-  "password": "password5",
+  "password": "$2b$10$5a2HRjdRPViQ9RDI70eMWusOv10fWw9EmSyUke.yuwa6z4TY0tQOa",
   "phone": "0922334455",
   "name": "Michael Brown",
-  "age": 29,
-  "status": 1,
+  "age": {
+    "$numberLong": "29"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:01:54.640Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:01:54.640Z"
+  },
+  "deletedAt": null
 },
 {
   "_id": {
-    "$oid": "66f1266bf37a326503bf6558"
+    "$oid": "66f174dd9fa39557cb850769"
   },
   "email": "user6@example.com",
-  "password": "password6",
+  "password": "$2b$10$mh4t265GNRXeYEBriilGnOUvqND/yDKAVdYalXHP.ROAgSos2qiPq",
   "phone": "0911445566",
   "name": "Sarah Wilson",
-  "age": 27,
-  "status": 1,
+  "age": {
+    "$numberLong": "27"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:02:05.527Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:02:05.527Z"
+  },
+  "deletedAt": null
 },
 {
   "_id": {
-    "$oid": "66f1266bf37a326503bf6559"
+    "$oid": "66f174e99fa39557cb85076a"
   },
   "email": "user7@example.com",
-  "password": "password7",
+  "password": "$2b$10$4JGgaj.mmIklg850ZzL0W.pHjwg.3QeSJNB9R5Mxn8VpALrTy8rm.",
   "phone": "0933445566",
   "name": "Chris Martinez",
-  "age": 35,
-  "status": 1,
+  "age": {
+    "$numberLong": "35"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:02:17.080Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:02:17.080Z"
+  },
+  "deletedAt": null
 },
 {
   "_id": {
-    "$oid": "66f1266bf37a326503bf655a"
+    "$oid": "66f174f39fa39557cb85076b"
   },
   "email": "user8@example.com",
-  "password": "password8",
+  "password": "$2b$10$KEi6BbFsIR0bRDtsNo3SSOnLmyL8K.B2hjB9/QOaEDn2OY0f9ijeS",
   "phone": "0944556677",
   "name": "Laura Lee",
-  "age": 31,
-  "status": 1,
+  "age": {
+    "$numberLong": "31"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:02:27.218Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:02:27.218Z"
+  },
+  "deletedAt": null
 },
 {
   "_id": {
-    "$oid": "66f1266bf37a326503bf655b"
+    "$oid": "66f174fd9fa39557cb85076c"
   },
   "email": "user9@example.com",
-  "password": "password9",
+  "password": "$2b$10$UGkKF1Th6qCz7NsCJVGzz.p9hyj6d7vulnXN4aKSvo94yONz1PtwW",
   "phone": "0955667788",
   "name": "David Anderson",
-  "age": 33,
-  "status": 1,
+  "age": {
+    "$numberLong": "33"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:02:37.896Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:02:37.896Z"
+  },
+  "deletedAt": null
 },
 {
   "_id": {
-    "$oid": "66f1266bf37a326503bf655c"
+    "$oid": "66f175089fa39557cb85076d"
   },
   "email": "user10@example.com",
-  "password": "password10",
+  "password": "$2b$10$eqjzca6svj2aiMJJQOSJAeN4yL8i9sZZgWuX5KWVFSdWiWv.cN6YO",
   "phone": "0966778899",
   "name": "Megan White",
-  "age": 26,
-  "status": 1,
+  "age": {
+    "$numberLong": "26"
+  },
   "createdAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
+    "$date": "2024-09-23T14:02:48.503Z"
   },
   "updatedAt": {
-    "$date": "2023-09-20T00:00:00.000Z"
-  }
+    "$date": "2024-09-23T14:02:48.503Z"
+  },
+  "deletedAt": null
 }]

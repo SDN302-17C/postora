@@ -23,7 +23,7 @@ model User {
   posts     Posts[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
-  deletedAt DateTime?
+  deletedAt DateTime? 
 }
 
 model Posts {

@@ -44,7 +44,7 @@ export class UserService {
         ],
       },
       orderBy: {
-        createdAt: 'desc',
+        name: 'asc',
       },
     });
 
@@ -116,6 +116,7 @@ export class UserService {
       data: {
         ...body,
         password: hashedPassword,
+        deletedAt: null,
       },
     });
     return newUser;

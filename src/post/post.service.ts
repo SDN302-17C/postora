@@ -48,8 +48,11 @@ export class PostService {
         ],
       },
       include: {
-        author: true, 
-        category: true, 
+        author: true,
+        category: true,
+      },
+      orderBy: {
+        title: 'asc',
       },
     });
 
@@ -99,8 +102,8 @@ export class PostService {
         ],
       },
       include: {
-        author: true, 
-        category: true, 
+        author: true,
+        category: true,
       },
     });
     if (!post) {
@@ -111,7 +114,7 @@ export class PostService {
 
   async createPost(data: createPostDto): Promise<Posts> {
     return this.prismaService.posts.create({
-      data: data,
+      data: { ...data, deletedAt: null },
     });
   }
 
