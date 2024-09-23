@@ -129,7 +129,7 @@ export class PostService {
     });
   }
 
-  async deletePost(id: string, data: updatePostDto): Promise<Posts> {
+  async deletePost(id: string): Promise<Posts> {
     return this.prismaService.posts.update({
       where: {
         id,

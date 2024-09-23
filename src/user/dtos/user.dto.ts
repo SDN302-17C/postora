@@ -17,8 +17,6 @@ export class UserDto {
   @IsNotEmpty()
   @MinLength(6)
   password: string;
-
-  status: number;
 }
 
 export class updateUserDto {
@@ -29,11 +27,7 @@ export class updateUserDto {
   phone: string;
 
   age: number;
-
-  status: number;
 }
-
-
 
 export interface UserFilterType {
   itemsPerPage?: number;

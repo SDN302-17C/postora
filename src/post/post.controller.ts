@@ -42,7 +42,7 @@ export class PostController {
   }
 
   @Delete(':id')
-  delete(@Param('id') id: string, @Body() body: updatePostDto): Promise<Posts> {
-    return this.postService.deletePost(id, body);
+  delete(@Param('id') id: string): Promise<Posts> {
+    return this.postService.deletePost(id);
   }
 }

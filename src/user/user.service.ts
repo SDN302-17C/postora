@@ -39,7 +39,7 @@ export class UserService {
         ],
         AND: [
           {
-            status: 1,
+            deletedAt: null,
           },
         ],
       },
@@ -64,7 +64,7 @@ export class UserService {
         ],
         AND: [
           {
-            status: 1,
+            deletedAt: null,
           },
         ],
       },
@@ -81,7 +81,12 @@ export class UserService {
   async getUserById(id: string): Promise<User> {
     const user = await this.prismaService.user.findFirst({
       where: {
-        id
+        id,
+        AND: [
+          {
+            deletedAt: null,
+          },
+        ],
       },
     });
 
@@ -115,11 +120,16 @@ export class UserService {
     });
     return newUser;
   }
-  
+
   async updateUser(id: string, body: updateUserDto): Promise<User> {
     const user = await this.prismaService.user.findFirst({
       where: {
-        id
+        id,
+        AND: [
+          {
+            deletedAt: null,
+          },
+        ],
       },
     });
 
@@ -140,25 +150,13 @@ export class UserService {
   }
 
   async deleteUser(id: string): Promise<User> {
-    const user = await this.prismaService.user.findFirst({
-      where: {
-        id
-      },
-    });
-
-    if (!user) {
-      throw new HttpException('User not found', 404);
-    }
-
-    const deletedUser = await this.prismaService.user.update({
+    return this.prismaService.user.update({
       where: {
         id,
       },
       data: {
-        status: 0,
+        deletedAt: new Date(),
       },
     });
-
-    return deletedUser;
   }
 }
