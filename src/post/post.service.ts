@@ -43,7 +43,7 @@ export class PostService {
         ],
         AND: [
           {
-            status: 1,
+            deletedAt: null,
           },
         ],
       },
@@ -74,7 +74,7 @@ export class PostService {
         ],
         AND: [
           {
-            status: 1,
+            deletedAt: null,
           },
         ],
       },
@@ -92,6 +92,11 @@ export class PostService {
     const post = this.prismaService.posts.findUnique({
       where: {
         id,
+        AND: [
+          {
+            deletedAt: null,
+          },
+        ],
       },
       include: {
         author: true, 
@@ -114,15 +119,23 @@ export class PostService {
     return this.prismaService.posts.update({
       where: {
         id,
+        AND: [
+          {
+            deletedAt: null,
+          },
+        ],
       },
       data,
     });
   }
 
-  async deletePost(id: string): Promise<Posts> {
-    return this.prismaService.posts.delete({
+  async deletePost(id: string, data: updatePostDto): Promise<Posts> {
+    return this.prismaService.posts.update({
       where: {
         id,
+      },
+      data: {
+        deletedAt: new Date(),
       },
     });
   }

@@ -11,8 +11,6 @@ export class createPostDto {
   @IsNotEmpty()
   summary: string;
 
-  status: number;
-
   @IsNotEmpty()
   authorId: string;
 
@@ -26,8 +24,6 @@ export class updatePostDto {
   content: string;
 
   summary: string;
-
-  status: number;
 
   authorId: string;
 
