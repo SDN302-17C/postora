@@ -50,10 +50,3 @@ model Category {
   deletedAt   DateTime?
 }
 
-model Comment {
-  id        String    @id @default(cuid()) @map("_id") @db.ObjectId
-  message   String
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  deletedAt DateTime?
-}
