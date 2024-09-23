@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf6526"
+  },
+  "message": "Great post, very insightful!"
+},
+{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf6527"
+  },
+  "message": "I found this post very helpful."
+},
+{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf6528"
+  },
+  "message": "I disagree with some of the points made here."
+},
+{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf6529"
+  },
+  "message": "Well written article!"
+},
+{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf652a"
+  },
+  "message": "This article needs more details."
+},
+{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf652b"
+  },
+  "message": "Excellent read, highly recommend."
+},
+{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf652c"
+  },
+  "message": "Interesting topic, but the content is lacking."
+},
+{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf652d"
+  },
+  "message": "Thanks for sharing this information!"
+},
+{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf652e"
+  },
+  "message": "Could use more sources to back up the claims."
+},
+{
+  "_id": {
+    "$oid": "66f1239cf37a326503bf652f"
+  },
+  "message": "This post changed my perspective."
+}]

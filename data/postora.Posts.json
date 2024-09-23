@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf657a"
+  },
+  "title": "The Rise of AI",
+  "summary": "An overview of how AI is transforming industries.",
+  "content": "AI has been increasingly used to revolutionize many industries...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+},
+{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf657b"
+  },
+  "title": "Healthy Living Tips",
+  "summary": "How to maintain a healthy lifestyle.",
+  "content": "Living a healthy lifestyle includes regular exercise...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+},
+{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf657c"
+  },
+  "title": "Education in the Digital Age",
+  "summary": "How digital tools are transforming education.",
+  "content": "The digital age has brought about significant changes...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+},
+{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf657d"
+  },
+  "title": "Top 10 Travel Destinations",
+  "summary": "Explore the top 10 travel destinations for 2023.",
+  "content": "If you're planning to travel in 2023, consider these top 10...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+},
+{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf657e"
+  },
+  "title": "How to Improve Your Lifestyle",
+  "summary": "Steps you can take to improve your lifestyle.",
+  "content": "Improving your lifestyle doesn't have to be difficult...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+},
+{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf657f"
+  },
+  "title": "Investing for Beginners",
+  "summary": "A beginner's guide to investing in the stock market.",
+  "content": "Investing can be intimidating, but with the right approach...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+},
+{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf6580"
+  },
+  "title": "Latest Movie Releases",
+  "summary": "Check out the latest movie releases of 2023.",
+  "content": "2023 has been an exciting year for movie lovers...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+},
+{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf6581"
+  },
+  "title": "Easy Dinner Recipes",
+  "summary": "Simple and easy dinner recipes for busy nights.",
+  "content": "If you're looking for quick and easy dinner recipes...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+},
+{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf6582"
+  },
+  "title": "Football Season Highlights",
+  "summary": "A review of the 2023 football season highlights.",
+  "content": "The 2023 football season was filled with exciting moments...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+},
+{
+  "_id": {
+    "$oid": "66f126f7f37a326503bf6583"
+  },
+  "title": "Scientific Discoveries of 2023",
+  "summary": "Major scientific breakthroughs of 2023.",
+  "content": "2023 has seen some incredible scientific discoveries...",
+  "status": 1,
+  "authorId": "66f1266bf37a326503bf6553",
+  "categoryId": "66f126daf37a326503bf656e"
+}]
