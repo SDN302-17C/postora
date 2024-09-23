@@ -3,16 +3,16 @@ import { IsNotEmpty } from 'class-validator';
 
 export class createCategoryDto {
   @IsNotEmpty()
-  name: String;
+  name: string;
 
   @IsNotEmpty()
-  description: String;
+  description: string;
 }
 
 export class updateCategoryDto {
-  name: String;
+  name: string;
 
-  description: String;
+  description: string;
 }
 
 export interface CategoryFilterType {

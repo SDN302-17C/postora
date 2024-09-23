@@ -1,0 +1,140 @@
+[{
+    "_id": {
+      "$oid": "66f17ca3d2c697b92095aa25"
+    },
+    "name": "Health",
+    "description": "Health tips and news.",
+    "createdAt": {
+      "$date": "2024-09-23T14:35:14.886Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:35:14.886Z"
+    },
+    "deletedAt": null
+  },
+  {
+    "_id": {
+      "$oid": "66f17cb3d2c697b92095aa26"
+    },
+    "name": "Education",
+    "description": "Educational content and resources.",
+    "createdAt": {
+      "$date": "2024-09-23T14:35:31.320Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:35:31.320Z"
+    },
+    "deletedAt": null
+  },
+  {
+    "_id": {
+      "$oid": "66f17cbcd2c697b92095aa27"
+    },
+    "name": "Travel",
+    "description": "Travel guides and tips.",
+    "createdAt": {
+      "$date": "2024-09-23T14:35:40.311Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:35:40.311Z"
+    },
+    "deletedAt": null
+  },
+  {
+    "_id": {
+      "$oid": "66f17cc5d2c697b92095aa28"
+    },
+    "name": "Lifestyle",
+    "description": "Lifestyle and personal development.",
+    "createdAt": {
+      "$date": "2024-09-23T14:35:49.337Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:35:49.337Z"
+    },
+    "deletedAt": null
+  },
+  {
+    "_id": {
+      "$oid": "66f17cd8d2c697b92095aa29"
+    },
+    "name": "Finance",
+    "description": "Finance and investment tips.",
+    "createdAt": {
+      "$date": "2024-09-23T14:36:08.508Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:36:08.508Z"
+    },
+    "deletedAt": null
+  },
+  {
+    "_id": {
+      "$oid": "66f17ce0d2c697b92095aa2a"
+    },
+    "name": "Entertainment",
+    "description": "Movies, TV shows, and more.",
+    "createdAt": {
+      "$date": "2024-09-23T14:36:16.934Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:36:16.934Z"
+    },
+    "deletedAt": null
+  },
+  {
+    "_id": {
+      "$oid": "66f17cead2c697b92095aa2b"
+    },
+    "name": "Food",
+    "description": "Recipes and food-related content.",
+    "createdAt": {
+      "$date": "2024-09-23T14:36:26.454Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:36:26.454Z"
+    },
+    "deletedAt": null
+  },
+  {
+    "_id": {
+      "$oid": "66f17cf4d2c697b92095aa2c"
+    },
+    "name": "Sports",
+    "description": "Latest news and discussions on sports.",
+    "createdAt": {
+      "$date": "2024-09-23T14:36:36.359Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:36:36.359Z"
+    },
+    "deletedAt": null
+  },
+  {
+    "_id": {
+      "$oid": "66f17d00d2c697b92095aa2d"
+    },
+    "name": "Science",
+    "description": "Articles on scientific discoveries.",
+    "createdAt": {
+      "$date": "2024-09-23T14:36:48.468Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:36:48.468Z"
+    },
+    "deletedAt": null
+  },
+  {
+    "_id": {
+      "$oid": "66f17d32d2c697b92095aa2e"
+    },
+    "name": "Technology",
+    "description": "Posts about the latest in technology.",
+    "createdAt": {
+      "$date": "2024-09-23T14:37:38.833Z"
+    },
+    "updatedAt": {
+      "$date": "2024-09-23T14:37:38.833Z"
+    },
+    "deletedAt": null
+  }]
