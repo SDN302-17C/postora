@@ -36,7 +36,10 @@ export class AuthService {
         password: hashedPassword,
       },
     });
-    return newUser;
+    throw new HttpException(
+      { message: 'Register Successful!', user: newUser },
+      201,
+    );
   };
 
   login = async (userData: {
@@ -60,7 +63,7 @@ export class AuthService {
 
     // If password is incorrect, throw an error
     if (!passwordMatch) {
-      throw new HttpException({ message: 'Invalid credentials!' }, 401);
+      throw new HttpException({ message: 'Password is incorrect!' }, 401);
     }
 
     // Generate token
@@ -75,6 +78,9 @@ export class AuthService {
       expiresIn: '7d',
     });
 
-    return {accessToken, refreshToken};
+    throw new HttpException(
+      { message: 'Login Successful!', accessToken, refreshToken },
+      200,
+    );
   };
 }
