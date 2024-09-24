@@ -11,10 +11,10 @@ import {
 import { PostService } from './post.service';
 import { Posts } from '@prisma/client';
 import {
-  createPostDto,
+  CreatePostDto,
   PostFilterType,
   PostPaginationResponseType,
-  updatePostDto,
+  UpdatePostDto,
 } from './dto/post.dtos';
 
 @Controller('posts')
@@ -32,12 +32,12 @@ export class PostController {
   }
 
   @Post()
-  create(@Body() body: createPostDto): Promise<Posts> {
+  create(@Body() body: CreatePostDto): Promise<Posts> {
     return this.postService.createPost(body);
   }
 
   @Put(':id')
-  update(@Param('id') id: string, @Body() body: updatePostDto): Promise<Posts> {
+  update(@Param('id') id: string, @Body() body: UpdatePostDto): Promise<Posts> {
     return this.postService.updatePost(id, body);
   }
 

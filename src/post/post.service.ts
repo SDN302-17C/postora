@@ -1,10 +1,10 @@
 import { HttpException, Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma.service';
 import {
-  createPostDto,
+  CreatePostDto,
   PostFilterType,
   PostPaginationResponseType,
-  updatePostDto,
+  UpdatePostDto,
 } from './dto/post.dtos';
 import { Posts } from '@prisma/client';
 
@@ -112,7 +112,7 @@ export class PostService {
     return post;
   }
 
-  async createPost(data: createPostDto): Promise<Posts> {
+  async createPost(data: CreatePostDto): Promise<Posts> {
     const newPost = this.prismaService.posts.create({
       data: { ...data, deletedAt: null },
     });
@@ -122,7 +122,7 @@ export class PostService {
     );
   }
 
-  async updatePost(id: string, data: updatePostDto): Promise<Posts> {
+  async updatePost(id: string, data: UpdatePostDto): Promise<Posts> {
     const updatePost = this.prismaService.posts.update({
       where: {
         id,

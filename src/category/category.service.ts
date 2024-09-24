@@ -4,8 +4,8 @@ import { Category } from '@prisma/client';
 import {
   CategoryFilterType,
   CategoryPaginationResponseType,
-  createCategoryDto,
-  updateCategoryDto,
+  CreateCategoryDto,
+  UpdateCategoryDto,
 } from './dtos/category.dto';
 
 @Injectable()
@@ -94,7 +94,7 @@ export class CategoryService {
     return category;
   }
 
-  async createCategory(data: createCategoryDto): Promise<Category> {
+  async createCategory(data: CreateCategoryDto): Promise<Category> {
     const newCategory = this.prismaService.category.create({
       data: { ...data, deletedAt: null },
     });
@@ -105,7 +105,7 @@ export class CategoryService {
     );
   }
 
-  async updateCategory(id: string, data: updateCategoryDto): Promise<Category> {
+  async updateCategory(id: string, data: UpdateCategoryDto): Promise<Category> {
     const updateCategory = this.prismaService.category.update({
       where: {
         id,

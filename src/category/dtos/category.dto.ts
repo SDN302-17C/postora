@@ -1,7 +1,7 @@
 import { Category } from '@prisma/client';
 import { IsNotEmpty } from 'class-validator';
 
-export class createCategoryDto {
+export class CreateCategoryDto {
   @IsNotEmpty()
   name: string;
 
@@ -9,7 +9,7 @@ export class createCategoryDto {
   description: string;
 }
 
-export class updateCategoryDto {
+export class UpdateCategoryDto {
   name: string;
 
   description: string;

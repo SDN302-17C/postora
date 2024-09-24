@@ -1,7 +1,7 @@
 import { Posts } from '@prisma/client';
 import { IsNotEmpty } from 'class-validator';
 
-export class createPostDto {
+export class CreatePostDto {
   @IsNotEmpty()
   title: string;
 
@@ -18,7 +18,7 @@ export class createPostDto {
   categoryId: string;
 }
 
-export class updatePostDto {
+export class UpdatePostDto {
   title: string;
 
   content: string;

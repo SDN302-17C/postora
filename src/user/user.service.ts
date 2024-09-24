@@ -1,8 +1,8 @@
 import { HttpException, Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma.service';
 import {
-  updateUserDto,
-  UserDto,
+  UpdateUserDto,
+  CreateUserDto,
   UserFilterType,
   UserPaginationResponseType,
 } from './dtos/user.dto';
@@ -97,7 +97,7 @@ export class UserService {
     return user;
   }
 
-  async createUser(body: UserDto): Promise<User> {
+  async createUser(body: CreateUserDto): Promise<User> {
     // Check if user already exists
     const user = await this.prismaService.user.findUnique({
       where: {
@@ -125,7 +125,7 @@ export class UserService {
     );
   }
 
-  async updateUser(id: string, body: updateUserDto): Promise<User> {
+  async updateUser(id: string, body: UpdateUserDto): Promise<User> {
     const user = await this.prismaService.user.findFirst({
       where: {
         id,

@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, Param, Post, Put, Query } from '@nestjs/common';
 import { CategoryService } from './category.service';
-import { CategoryFilterType, CategoryPaginationResponseType, createCategoryDto, updateCategoryDto } from './dtos/category.dto';
+import { CategoryFilterType, CategoryPaginationResponseType, CreateCategoryDto, UpdateCategoryDto } from './dtos/category.dto';
 import { Category } from '@prisma/client';
 
 @Controller('categories')
@@ -18,12 +18,12 @@ export class CategoryController {
   }
 
   @Post()
-  create(@Body() body: createCategoryDto): Promise<Category> {
+  create(@Body() body: CreateCategoryDto): Promise<Category> {
     return this.categoryService.createCategory(body);
   }
 
   @Put(':id')
-  update(@Param('id') id: string, @Body() body: updateCategoryDto): Promise<Category> {
+  update(@Param('id') id: string, @Body() body: UpdateCategoryDto): Promise<Category> {
     return this.categoryService.updateCategory(id, body);
   }
 

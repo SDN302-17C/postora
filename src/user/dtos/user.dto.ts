@@ -1,7 +1,7 @@
 import { User } from '@prisma/client';
 import { IsEmail, IsNotEmpty, IsOptional, Matches, MinLength } from 'class-validator';
 
-export class UserDto {
+export class CreateUserDto {
   @IsNotEmpty()
   name: string;
 
@@ -19,7 +19,7 @@ export class UserDto {
   password: string;
 }
 
-export class updateUserDto {
+export class UpdateUserDto {
   name: string;
 
   @IsOptional()
